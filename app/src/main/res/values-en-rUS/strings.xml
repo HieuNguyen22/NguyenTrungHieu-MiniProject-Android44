@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NguyenTrungHieu-MiniProject-Android44</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="forgot_password">FORGOT PASSWORD</string>
+    <string name="register">REGISTER</string>
+    <string name="menu">MENU</string>
+    <string name="hello">Welcome!</string>
+    <string name="pizza">PIZZA PANDA</string>
+    <string name="kfc">KFC SUPER</string>
+    <string name="bread">BREAD EGGS</string>
+    <string name="coca">COCA COLA</string>
+    <string name="chicken">CHICKEN SUPER</string>
+    <string name="cake">CUP CAKE</string>
+    <string name="order">ORDER</string>
+    <string name="login_text">Already have an account?</string>
+    <string name="or">OR</string>
+    <string name="cart">Cart</string>
+    <string name="clear">CLEAR</string>
+    <string name="sum">"Sum: "</string>
+</resources>

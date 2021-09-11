@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">NguyenTrungHieu-MiniProject-Android44</string>
+
+    --------------LOGIN-------------
+    <string name="login_text">Đã có tài khoản?</string>
+    <string name="login_username">Tài khoản</string>
+    <string name="login_password">Mật khẩu</string>
+    <string name="login">ĐĂNG NHẬP</string>
+    <string name="forgot_password">QUÊN MẬT KHẨU</string>
+    <string name="or">HOẶC</string>
+    <string name="register">ĐĂNG KÝ TÀI KHOẢN MỚI</string>
+
+    -------------PICK------------
+    <string name="menu">THỰC ĐƠN</string>
+    <string name="hello">Xin chào!</string>
+    <string name="pizza">PIZZA PANDA</string>
+    <string name="kfc">KFC SUPER</string>
+    <string name="bread">BREAD EGGS</string>
+    <string name="coca">COCA COLA</string>
+    <string name="chicken">CHICKEN SUPER</string>
+    <string name="cake">CUP CAKE</string>
+    <string name="order">ĐẶT HÀNG</string>
+
+    --------------CART-------------
+    <string name="cart">Giỏ hàng</string>
+    <string name="clear">XÓA HẾT</string>
+    <string name="sum">Tổng: </string>
+</resources>
