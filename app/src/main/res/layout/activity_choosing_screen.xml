@@ -1,269 +1,274 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ChoosingScreen">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/line1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.1"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/line2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.17"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1"/>
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/line3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.27"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.17"/>
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/line4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.65"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.27"/>
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineCount1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.87"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.65"/>
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineCount2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.95"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineCount1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.87"/>
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineCount3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.03"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineCount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95"/>
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/lineCount4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.07"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineCount3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.03"/>
 
-    <View
-        android:id="@+id/header"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/color"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/line1"
-        />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineCount4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.07"/>
 
-    <View
-        android:id="@+id/header2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@drawable/ic_wave"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header"
-        app:layout_constraintBottom_toBottomOf="@id/line2"
-        />
+        <View
+            android:id="@+id/header"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/line1"
+            />
 
-    <View
-        android:id="@+id/bubble"
-        android:layout_marginTop="20dp"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@drawable/ic_baseline_bubble_chart_24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header"
-        app:layout_constraintStart_toStartOf="@id/line4"
-        app:layout_constraintBottom_toBottomOf="@id/line3"
-        />
+        <View
+            android:id="@+id/header2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/ic_wave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header"
+            app:layout_constraintBottom_toBottomOf="@id/line2"
+            />
 
-    <TextView
-        android:id="@+id/menu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menu"
-        android:textColor="@color/white"
-        android:textSize="45sp"
-        android:textStyle="bold"
-        android:layout_marginStart="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/lineCount3"
-        app:layout_constraintEnd_toEndOf="@id/line4"
+        <View
+            android:id="@+id/bubble"
+            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/ic_baseline_bubble_chart_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header"
+            app:layout_constraintStart_toStartOf="@id/line4"
+            app:layout_constraintBottom_toBottomOf="@id/line3"
+            />
 
-        />
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/lineCount3"
+            app:layout_constraintEnd_toEndOf="@id/line4"
 
-    <ImageView
-        android:id="@+id/cart"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="@id/line4"
-        app:layout_constraintBottom_toBottomOf="@id/line1"
-        app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
+            />
 
-    <TextView
-        android:id="@+id/count"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@drawable/ic_baseline_brightness_1_24"
-        app:layout_constraintBottom_toBottomOf="@id/lineCount4"
-        app:layout_constraintEnd_toEndOf="@id/lineCount2"
-        app:layout_constraintStart_toStartOf="@id/lineCount1"
-        app:layout_constraintTop_toTopOf="@id/lineCount3"
-        android:text="0"
-        android:textColor="@color/white"
-        android:gravity="center"
-        />
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@id/line4"
+            app:layout_constraintBottom_toBottomOf="@id/line1"
+            app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
 
-
-    <TextView
-        android:id="@+id/welcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello"
-        android:textSize="35dp"
-        android:textStyle="normal"
-        android:textColor="@color/color"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/line4"
-        app:layout_constraintTop_toTopOf="@id/line2"
-        app:layout_constraintBottom_toBottomOf="@id/line3"/>
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/ic_baseline_brightness_1_24"
+            app:layout_constraintBottom_toBottomOf="@id/lineCount4"
+            app:layout_constraintEnd_toEndOf="@id/lineCount2"
+            app:layout_constraintStart_toStartOf="@id/lineCount1"
+            app:layout_constraintTop_toTopOf="@id/lineCount3"
+            android:text="0"
+            android:textColor="@color/white"
+            android:gravity="center"
+            />
 
 
-    <Button
-        android:id="@+id/pizza"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="35dp"
-        android:background="@drawable/round_bg"
-        android:text="@string/pizza"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome" />
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello"
+            android:textSize="35dp"
+            android:textStyle="normal"
+            android:textColor="@color/color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/line4"
+            app:layout_constraintTop_toTopOf="@id/line2"
+            app:layout_constraintBottom_toBottomOf="@id/line3"/>
 
 
-    <Button
-        android:id="@+id/KFC"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="35dp"
-        android:background="@drawable/round_bg"
-        android:text="@string/kfc"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pizza" />
-
-    <Button
-        android:id="@+id/breadEgg"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="35dp"
-        android:background="@drawable/round_bg"
-        android:text="@string/bread"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/KFC" />
-
-    <Button
-        android:id="@+id/coca"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="35dp"
-        android:background="@drawable/round_bg"
-        android:text="@string/coca"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/breadEgg" />
-
-    <Button
-        android:id="@+id/chicken"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="35dp"
-        android:background="@drawable/round_bg"
-        android:text="@string/chicken"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/coca" />
-
-    <Button
-        android:id="@+id/cake"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="35dp"
-        android:background="@drawable/round_bg"
-        android:text="@string/cake"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chicken" />
+        <Button
+            android:id="@+id/pizza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_bg"
+            android:text="@string/pizza"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcome" />
 
 
-    <Button
-        android:id="@+id/order"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:background="@drawable/round_bg"
-        android:text="@string/order"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cake" />
+        <Button
+            android:id="@+id/KFC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_bg"
+            android:text="@string/kfc"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pizza" />
+
+        <Button
+            android:id="@+id/breadEgg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_bg"
+            android:text="@string/bread"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/KFC" />
+
+        <Button
+            android:id="@+id/coca"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_bg"
+            android:text="@string/coca"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/breadEgg" />
+
+        <Button
+            android:id="@+id/chicken"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_bg"
+            android:text="@string/chicken"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coca" />
+
+        <Button
+            android:id="@+id/cake"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_bg"
+            android:text="@string/cake"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chicken" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/round_bg"
+            android:text="@string/order"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cake" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</layout>

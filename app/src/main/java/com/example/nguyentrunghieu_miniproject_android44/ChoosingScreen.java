@@ -2,27 +2,21 @@ package com.example.nguyentrunghieu_miniproject_android44;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingComponent;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Pair;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import androidx.databinding.DataBindingUtil;
+import com.example.nguyentrunghieu_miniproject_android44.databinding.ActivityChoosingScreenBinding;
+
 
 public class ChoosingScreen extends AppCompatActivity {
 
     // KHOI TAO
-    Button pizza, kfc,bread,coca, chicken, cake, order;
-    ImageView cart;
-    TextView count;
+    ActivityChoosingScreenBinding binding;
 
     // KHOI TAO + KHAI BAO SO LUONG
 
@@ -34,75 +28,67 @@ public class ChoosingScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_choosing_screen);
+//        setContentView(R.layout.activity_choosing_screen);
 
         // TRUYEN ID
-        pizza = findViewById(R.id.pizza);
-        kfc = findViewById(R.id.KFC);
-        bread = findViewById(R.id.breadEgg);
-        coca =  findViewById(R.id.coca);
-        chicken = findViewById(R.id.chicken);
-        cake = findViewById(R.id.cake);
-        cart = findViewById(R.id.cart);
-        order = findViewById(R.id.order);
-        count = findViewById(R.id.count);
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_choosing_screen);
 
         // EVENT PIZZA
-        pizza.setOnClickListener(new View.OnClickListener() {
+        binding.pizza.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 list[0]++;
-                count.setText(String.valueOf(++amount));
+                binding.count.setText(String.valueOf(++amount));
             }
         });
 
         // EVENT KFC
-        kfc.setOnClickListener(new View.OnClickListener() {
+        binding.KFC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 list[1]++;
-                count.setText(String.valueOf(++amount));
+                binding.count.setText(String.valueOf(++amount));
             }
         });
 
         // EVENT BREAD
-        bread.setOnClickListener(new View.OnClickListener() {
+        binding.breadEgg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 list[2]++;
-                count.setText(String.valueOf(++amount));
+                binding.count.setText(String.valueOf(++amount));
             }
         });
 
         // EVENT COCA
-        coca.setOnClickListener(new View.OnClickListener() {
+        binding.coca.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 list[3]++;
-                count.setText(String.valueOf(++amount));
+                binding.count.setText(String.valueOf(++amount));
             }
         });
 
         // EVENT CHICKEN
-        chicken.setOnClickListener(new View.OnClickListener() {
+        binding.chicken.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 list[4]++;
-                count.setText(String.valueOf(++amount));
+                binding.count.setText(String.valueOf(++amount));
             }
         });
 
         // EVENT CAKE
-        cake.setOnClickListener(new View.OnClickListener() {
+        binding.cake.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 list[5]++;
-                count.setText(String.valueOf(++amount));
+                binding.count.setText(String.valueOf(++amount));
             }
         });
 
         // EVENT CART
-        cart.setOnClickListener(new View.OnClickListener() {
+        binding.cart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent1 = new Intent(getBaseContext(),Bill.class);
@@ -114,7 +100,7 @@ public class ChoosingScreen extends AppCompatActivity {
 
 
         // EVENT ORDER
-        order.setOnClickListener(new View.OnClickListener() {
+        binding.order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getBaseContext(),"Đặt hàng thành công", Toast.LENGTH_LONG).show();
@@ -136,7 +122,7 @@ public class ChoosingScreen extends AppCompatActivity {
                     for (int i = 0; i < 6; i++) {
                         list[i] = 0;
                     }
-                count.setText("0");
+                binding.count.setText("0");
                 amount = 0;
 
                 } else {

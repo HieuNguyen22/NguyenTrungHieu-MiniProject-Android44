@@ -1,298 +1,300 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Bill">
+    >
 
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/line1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.1"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/line2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.2"/>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/line3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.13"/>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/line4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.55"/>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/line5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.05"/>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/line6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.95"/>
-
-
-
-    <TextView
-        android:id="@+id/header"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
-        android:background="@color/color"
-        android:text="@string/cart"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textSize="35dp"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/line1"
-        />
-
-    <ImageView
-        android:id="@+id/back"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:src="@drawable/ic_baseline_arrow_back_24"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/line1"
-        app:layout_constraintEnd_toEndOf="@id/line2"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="15dp"
-        android:layout_marginTop="15dp"/>
-
-
-    <LinearLayout
-        android:id="@+id/body"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/cart_bg"
-        app:layout_constraintEnd_toEndOf="@id/line6"
-        app:layout_constraintStart_toStartOf="@id/line5"
-        app:layout_constraintTop_toTopOf="@id/line3"
- >
-
-        <LinearLayout
-            android:id="@+id/linearLayout1"
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="35dp"
-            android:layout_marginBottom="35dp"
-            android:layout_marginEnd="32dp"
-            android:orientation="vertical"
-            android:layout_weight="1">
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1"/>
 
-            <TextView
-                android:id="@+id/pizza"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pizza Panda"
-                android:textSize="25dp"
-                android:textColor="@color/white"/>
-            <TextView
-                android:id="@+id/kfc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="KFC Super"
-                android:textSize="25dp"
-                android:textColor="@color/white"/>
-            <TextView
-                android:id="@+id/bread"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Bread Eggs"
-                android:textSize="25dp"
-                android:textColor="@color/white"/>
-            <TextView
-                android:id="@+id/coca"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Coca Cola"
-                android:textSize="25dp"
-                android:textColor="@color/white"/>
-            <TextView
-                android:id="@+id/chicken"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Chicken Super"
-                android:textSize="25dp"
-                android:textColor="@color/white"/>
-            <TextView
-                android:id="@+id/cake"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cup Cake"
-                android:textSize="25dp"
-                android:textColor="@color/white"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout2"
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:layout_marginBottom="35dp"
-            android:layout_marginEnd="32dp"
             android:orientation="vertical"
-            android:layout_weight="3">
+            app:layout_constraintGuide_percent="0.2"/>
 
-            <TextView
-                android:id="@+id/pizzaPrice"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="15$"
-                android:textSize="25dp"
-                android:textAlignment="viewEnd"
-                android:textColor="@color/white"/>
-            <TextView
-                android:id="@+id/kfcPrice"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="12$"
-                android:textSize="25dp"
-                android:textAlignment="viewEnd"
-                android:textColor="@color/white"/>
-            <TextView
-                android:id="@+id/breadPrice"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="5$"
-                android:textSize="25dp"
-                android:textAlignment="viewEnd"
-                android:textColor="@color/white"/>
-            <TextView
-                android:id="@+id/cocaPrice"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="3$"
-                android:textSize="25dp"
-                android:textAlignment="viewEnd"
-                android:textColor="@color/white"/>
-            <TextView
-                android:id="@+id/chickenPrice"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="10$"
-                android:textSize="25dp"
-                android:textAlignment="viewEnd"
-                android:textColor="@color/white"/>
-            <TextView
-                android:id="@+id/cakePrice"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="2$"
-                android:textSize="25dp"
-                android:textAlignment="viewEnd"
-                android:textColor="@color/white"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout3"
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:layout_marginBottom="35dp"
-            android:layout_marginEnd="32dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.13"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.55"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="3">
+            app:layout_constraintGuide_percent="0.05"/>
 
-            <TextView
-                android:id="@+id/pizzaCount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:textSize="25dp"
-                android:textColor="@color/white"/>
-            <TextView
-                android:id="@+id/kfcCount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:textSize="25dp"
-                android:textColor="@color/white"/>
-            <TextView
-                android:id="@+id/breadCount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:textSize="25dp"
-                android:textColor="@color/white"/>
-            <TextView
-                android:id="@+id/cocaCount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:textSize="25dp"
-                android:textColor="@color/white"/>
-            <TextView
-                android:id="@+id/chickenCount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:textSize="25dp"
-                android:textColor="@color/white"/>
-            <TextView
-                android:id="@+id/cakeCount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:textSize="25dp"
-                android:textColor="@color/white"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95"/>
 
+
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:background="@color/color"
+            android:text="@string/cart"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/line1"
+            />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/line1"
+            app:layout_constraintEnd_toEndOf="@id/line2"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cart_bg"
+            app:layout_constraintEnd_toEndOf="@id/line6"
+            app:layout_constraintStart_toStartOf="@id/line5"
+            app:layout_constraintTop_toTopOf="@id/line3"
+            >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="35dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/pizza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pizza Panda"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/kfc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KFC Super"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/bread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bread Eggs"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/coca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coca Cola"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/chicken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chicken Super"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/cake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cup Cake"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="35dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <TextView
+                    android:id="@+id/pizzaPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="15$"
+                    android:textSize="25dp"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/kfcPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12$"
+                    android:textSize="25dp"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/breadPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5$"
+                    android:textSize="25dp"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/cocaPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3$"
+                    android:textSize="25dp"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/chickenPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10$"
+                    android:textSize="25dp"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/cakePrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2$"
+                    android:textSize="25dp"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="35dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <TextView
+                    android:id="@+id/pizzaCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/kfcCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/breadCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/cocaCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/chickenCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/cakeCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
 
 
 
-    <TextView
-        android:id="@+id/sum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/body"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"
-        android:gravity="center_vertical"
-        android:text="@string/sum"
-        android:textSize="22dp"
-        />
+        <TextView
+            android:id="@+id/sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/body"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/sum"
+            android:textSize="22dp"
+            />
 
-    <Button
-        android:id="@+id/clear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="13dp"
-        android:text="@string/clear"
-        />
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="13dp"
+            android:text="@string/clear"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
